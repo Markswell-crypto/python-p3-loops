@@ -4,7 +4,7 @@ def happy_new_year():
     counter = 10
     while counter > 0 :
         print(counter)
-        counter - 1
+        counter -= 1
     print("Happy New Year!")
 
 def square_integers(int_list):
@@ -12,17 +12,17 @@ def square_integers(int_list):
 
 def fizzbuzz_printer():
     for num in range(1, 101):
-        print(fizzbuzz(num))
+        fizzbuzz(num)
 
 def fizzbuzz(num):
     if num % 3 == 0 and num % 5 == 0:
-        return "FizzBuzz"
+        print("FizzBuzz")
     elif num % 3 == 0:
-        return "Fizz"
+        print("Fizz")
     elif num % 5 == 0:
-        return "Buzz"
+        print("Buzz")
     else:
-        return num
+        print(num)
     
 def reverse_string(input_str):
     reversed_str = ""
