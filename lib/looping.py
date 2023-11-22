@@ -7,25 +7,21 @@ def happy_new_year():
         counter -= 1
     print("Happy New Year!")
 
+happy_new_year()
+
 def square_integers(int_list):
     return list(map(lambda num: num ** 2, int_list))
+square_integers([1,2,3,4,5])
 
-def fizzbuzz_printer():
+def fizzbuzz():
     for num in range(1, 101):
-        fizzbuzz(num)
+        if num % 3 == 0 and num % 5 == 0:
+            print("FizzBuzz")
+        elif num % 3 == 0:
+            print("Fizz")
+        elif num % 5 == 0:
+            print("Buzz")
+        else:
+            print(num)
 
-def fizzbuzz(num):
-    if num % 3 == 0 and num % 5 == 0:
-        print("FizzBuzz")
-    elif num % 3 == 0:
-        print("Fizz")
-    elif num % 5 == 0:
-        print("Buzz")
-    else:
-        print(num)
-    
-def reverse_string(input_str):
-    reversed_str = ""
-    for char in input_str:
-        reversed_str = char + reversed_str
-    return reversed_str
+fizzbuzz()
